@@ -4,7 +4,11 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: "https://testware-task-manager-nu.vercel.app"
+    origin: [
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "https://testware-task-manager-nu.vercel.app"
+    ]
 }));
 app.use(express.json());
 
