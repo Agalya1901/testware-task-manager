@@ -1,0 +1,165 @@
+
+.container {
+    max-width: 650px;
+    width: 90%;
+    margin: 70px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #24324a;
+    font-size: 32px;
+    margin: 0 0 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3978e8;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button {
+    background: #3978e8;
+    color: white;
+}
+
+form button:hover {
+    background: #245fc5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    background: #f7f9fc;
+    border: 1px solid #e8edf4;
+    border-radius: 10px;
+}
+
+li span {
+    color: #344054;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li button:first-of-type {
+    background: #d9f5e3;
+    color: #16713b;
+}
+
+li button:last-of-type {
+    background: #ffe1e1;
+    color: #c62828;
+}
+
+li button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    li {
+        gap: 7px;
+        padding: 10px;
+    }
+
+    li button {
+        padding: 9px;
+    }
+}
+
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 16px 8px;
+    border-radius: 10px;
+    background: #f1f5ff;
+}
+
+.stat-card h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #3978e8;
+}
+
+.stat-card p {
+    margin: 7px 0 0;
+    color: #667085;
+    font-size: 13px;
+}
+
+@media (max-width: 400px) {
+    .stats {
+        gap: 6px;
+    }
+
+    .stat-card {
+        padding: 12px 4px;
+    }
+}
