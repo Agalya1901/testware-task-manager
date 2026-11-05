@@ -63,9 +63,9 @@ app.put("/api/tasks/:id", (req, res) => {
             message: "Task not found"
         });
     }
-const body = req.body || {};
+    const body = req.body || {};
 
-if (body.title !== undefined) {
+    if (body.title !== undefined) {
         if (typeof req.body.title !== "string" ||
             !req.body.title.trim()) {
             return res.status(400).json({
@@ -74,8 +74,8 @@ if (body.title !== undefined) {
         }
 
         if (body.done !== undefined) {
-    task.done = body.done;
-}
+            task.done = body.done;
+        }
     }
 
     if (req.body.done !== undefined) {
